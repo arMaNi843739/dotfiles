@@ -12,6 +12,11 @@ map("n", "<A-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window W
 map({ "n", "v" }, "f", "<cmd>HopWord<cr>", { desc = "HopWord" })
 
 -- comment.nvim
-vim.keymap.del("n", "<c-_>")
 local comment_api = require("Comment.api")
 vim.keymap.set("n", "<C-_>", comment_api.toggle.linewise.current)
+
+-- terminal
+map("n", "<C-t>", function()
+  LazyVim.terminal()
+end, { desc = "Terminal (cwd)" })
+map("t", "<C-t>", "<cmd>close<cr>", { desc = "Hide Terminal" })
