@@ -15,9 +15,13 @@ yabai --start-service
 brew install koekeishiya/formulae/skhd
 skhd --start-service
 
-# install sketchybar
+# install FelixKratz/SketchyBar
 brew tap FelixKratz/formulae
 brew install sketchybar
 brew services start sketchybar
 brew install --cask font-hack-nerd-font
 chmod +x ./sketchybar/plugins/*.sh
+
+# install FelixKratz/JankyBorders
+brew install borders
+brew services start borders
