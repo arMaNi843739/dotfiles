@@ -6,8 +6,15 @@ return {
       -- add a keymap to browse plugin files
       -- stylua: ignore
       {
-        "<C-p>",
+        "<D-p>",
         function() require("telescope.builtin").find_files() end,
+        desc = "Find File",
+      },
+      {
+        "<D-f>",
+        function()
+          require("telescope.builtin").live_grep()
+        end,
         desc = "Find File",
       },
     },
