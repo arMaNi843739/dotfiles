@@ -5,10 +5,6 @@ brew update
 # install neovim and dependent packages
 brew install neovim ripgrep lazygit fd fish
 
-# install mdr for preview-markdown.vim
-sudo curl -Lo /usr/local/bin/mdr https://github.com/MichaelMure/mdr/releases/download/v0.2.5/mdr_darwin_amd64
-sudo chmod +x /usr/local/bin/mdr
-
 # install window manager
 brew install koekeishiya/formulae/yabai
 yabai --start-service
@@ -25,3 +21,7 @@ chmod +x ./sketchybar/plugins/*.sh
 # install FelixKratz/JankyBorders
 brew install borders
 brew services start borders
+
+# install FelixKratz/SketchyVim
+brew install svim
+brew services start svim
