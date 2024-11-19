@@ -25,3 +25,9 @@ brew services start borders
 # install FelixKratz/SketchyVim
 brew install svim
 brew services start svim
+
+# install AltTab
+brew install --cask alt-tab
+defaults import com.lwouis.alt-tab-macos ./alttab/com.lwouis.alt-tab-macos
+pgrep -f AltTab | xargs kill $1
+open /Applications/AltTab.app
