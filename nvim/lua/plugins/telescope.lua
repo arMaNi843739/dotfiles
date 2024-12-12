@@ -6,9 +6,16 @@ return {
       -- add a keymap to browse plugin files
       -- stylua: ignore
       {
-        "<leader>fp",
-        function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
-        desc = "Find Plugin File",
+        "<D-p>",
+        function() require("telescope.builtin").find_files() end,
+        desc = "Find File",
+      },
+      {
+        "<D-f>",
+        function()
+          require("telescope.builtin").live_grep()
+        end,
+        desc = "Find File",
       },
     },
     -- change some options
@@ -18,6 +25,12 @@ return {
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
         winblend = 0,
+        mappings = {
+          i = {
+            ["<C-j>"] = require("telescope.actions").move_selection_next,
+            ["<C-k>"] = require("telescope.actions").move_selection_previous,
+          },
+        },
       },
     },
   },

@@ -51,3 +51,5 @@ require("lazy").setup({
     },
   },
 })
+
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#ffffff", bg = "NONE" })
