@@ -1,3 +1,20 @@
+# 1) ignore all files 
+#    all files are ignored, but directories are not ignored
+*
+!*/
+
+# 2) define allowed folders
+!/borders/**
+!/kitty/**
+!/lazygit/**
+!/nvim/**
+!/sketchybar/**
+!/skhd/**
+!/vivaldi/**
+!/yabai/**
+!/install.sh
+
+# 3) define ignore files or folders
 tt.*
 .tests
 doc/tags
