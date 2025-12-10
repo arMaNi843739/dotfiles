@@ -31,6 +31,11 @@ return {
             ["<C-k>"] = require("telescope.actions").move_selection_previous,
           },
         },
+        pickers = {
+          find_files = {
+            hidden = true,
+          },
+        },
       },
     },
   },
