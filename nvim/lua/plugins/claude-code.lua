@@ -5,7 +5,7 @@ return {
   },
   config = function()
     require("claude-code").setup({
-      command = "~/.claude/local/claude",
+      command = "claude",
       window = {
         split_ratio = 0.3, -- Percentage of screen for the terminal window (height for horizontal, width for vertical splits)
         position = "botright", -- Position of the window: "botright", "topleft", "vertical", "rightbelow vsplit", etc.
