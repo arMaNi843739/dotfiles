@@ -4,7 +4,7 @@
 
 -- Disable autoformat for Vue files and Dockerfile
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "vue", "dockerfile" },
+  pattern = { "vue", "dockerfile", "yaml" },
   callback = function()
     vim.b.autoformat = false
   end,
