@@ -4,14 +4,9 @@
 !*/
 
 # 2) define allowed folders
-!/borders/**
 !/kitty/**
 !/lazygit/**
 !/nvim/**
-!/sketchybar/**
-!/skhd/**
-!/vivaldi/**
-!/yabai/**
 !/install.sh
 
 # 3) define ignore files or folders
