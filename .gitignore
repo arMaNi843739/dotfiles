@@ -7,6 +7,7 @@
 !/kitty/**
 !/lazygit/**
 !/nvim/**
+!/claude/**
 !/install.sh
 
 # 3) define ignore files or folders
