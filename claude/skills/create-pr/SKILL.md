@@ -154,6 +154,14 @@ EOF
 - Return the PR URL to the user when complete
 - **All PR titles and descriptions should be written in Japanese**
 
+### 7. Open PR in Browser
+
+After the PR is created, open it in the browser:
+
+```bash
+gh pr view --web
+```
+
 ## Branch Name Pattern Examples
 
 ### Branches WITH Jira Ticket (will fetch ticket information)
