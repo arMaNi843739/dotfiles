@@ -87,6 +87,7 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 - Keep first line concise (50-72 characters)
 - Include the **purpose and reason** in the body if not obvious
 - Focus on "why" rather than "what"
+- **Never use scopes**: Use `fix:`, `feat:`, `chore:` etc. — never `fix(scope):` style
 
 See [references/conventional-commits.md](references/conventional-commits.md) for detailed specification.
 
